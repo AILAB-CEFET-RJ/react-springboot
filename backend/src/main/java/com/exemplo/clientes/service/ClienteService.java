@@ -2,6 +2,7 @@ package com.exemplo.clientes.service;
 
 import com.exemplo.clientes.dto.ClienteRequestDTO;
 import com.exemplo.clientes.dto.ClienteResponseDTO;
+import com.exemplo.clientes.exception.ClienteNaoEncontradoException;
 import com.exemplo.clientes.model.Cliente;
 import com.exemplo.clientes.repository.ClienteRepository;
 import org.springframework.stereotype.Service;
@@ -33,5 +34,12 @@ public class ClienteService {
         return repository.findAll().stream()
             .map(c -> new ClienteResponseDTO(c.getId(), c.getNome(), c.getTelefone()))
             .collect(Collectors.toList());
+    }
+
+    public ClienteResponseDTO buscarPorId(Long id) {
+        Cliente cliente = repository.findById(id)
+            .orElseThrow(() -> new ClienteNaoEncontradoException(id));
+
+        return new ClienteResponseDTO(cliente.getId(), cliente.getNome(), cliente.getTelefone());
     }
 }

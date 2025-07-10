@@ -27,4 +27,10 @@ public class ClienteController {
     public ResponseEntity<List<ClienteResponseDTO>> listarTodos() {
         return ResponseEntity.ok(service.listarTodos());
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ClienteResponseDTO> buscarPorId(@PathVariable Long id) {
+        ClienteResponseDTO dto = service.buscarPorId(id);
+        return ResponseEntity.ok(dto);
+    }
 }
