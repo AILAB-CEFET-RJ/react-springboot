@@ -46,7 +46,7 @@ cd react-springboot
 ### 2. Executar o Backend (Spring Boot)
 
 ```bash
-cd springboot-clientes
+cd backend
 
 # (1) Garanta que o Maven Wrapper tenha permissão de execução
 chmod +x mvnw
@@ -63,7 +63,7 @@ chmod +x mvnw
 ### 3. Executar o Frontend (React)
 
 ```bash
-cd react-clientes
+cd ../frontend
 npm install
 npm run dev
 ```
@@ -169,48 +169,30 @@ O projeto `react-springboot` segue uma arquitetura em camadas tradicionais, onde
 
 ```
 react-springboot/
-├── .vscode/
-├── react-clientes/         # Frontend React (Vite)
-├── springboot-clientes/    # Backend Java (Spring Boot)
-└── README.md
-```
-
-```
-react-clientes/
-├── index.html
-├── package.json
-├── src
-│   ├── App.jsx
-│   └── main.jsx
-└── vite.config.js
-
-springboot-clientes/
-├── pom.xml
-└── src
-    └── main
-        ├── java
-        │   └── com
-        │       └── exemplo
-        │           └── clientes
-        │               ├── ClientesApplication.java
-        │               ├── controller
-        │               │   └── ClienteController.java
-        │               ├── dto
-        │               │   ├── ClienteRequestDTO.java
-        │               │   └── ClienteResponseDTO.java
-        │               ├── model
-        │               │   └── Cliente.java
-        │               ├── repository
-        │               │   └── ClienteRepository.java
-        │               └── service
-        │                   └── ClienteService.java
-        └── resources
-            ├── application.yml
-            └── data.sql
-
-.vscode/
-├── launch.json
-└── settings.json
+├── backend/              # Backend Java (Spring Boot)
+│   ├── pom.xml
+│   └── src/
+│       └── main/
+│           ├── java/com/exemplo/clientes/
+│           │   ├── ClientesApplication.java
+│           │   ├── controller/
+│           │   ├── dto/
+│           │   ├── model/
+│           │   ├── repository/
+│           │   └── service/
+│           └── resources/
+│               ├── application.yml
+│               └── data.sql
+├── frontend/             # Frontend React (Vite)
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── App.jsx
+│       └── main.jsx
+├── .gitignore
+├── README.md
+└── CONTRIBUTING.md
 ```
 
 ---

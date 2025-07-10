@@ -1,7 +1,0 @@
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/ClientesApplication.java
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/model/Cliente.java
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/service/ClienteService.java
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/controller/ClienteController.java
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/dto/ClienteResponseDTO.java
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/repository/ClienteRepository.java
-/home/ebezerra/ailab/anouk/react-springboot/springboot-clientes/src/main/java/com/exemplo/clientes/dto/ClienteRequestDTO.java

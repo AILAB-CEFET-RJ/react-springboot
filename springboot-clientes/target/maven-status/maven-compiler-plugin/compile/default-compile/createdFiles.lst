@@ -1,7 +1,0 @@
-com/exemplo/clientes/model/Cliente.class
-com/exemplo/clientes/dto/ClienteRequestDTO.class
-com/exemplo/clientes/controller/ClienteController.class
-com/exemplo/clientes/service/ClienteService.class
-com/exemplo/clientes/ClientesApplication.class
-com/exemplo/clientes/dto/ClienteResponseDTO.class
-com/exemplo/clientes/repository/ClienteRepository.class
